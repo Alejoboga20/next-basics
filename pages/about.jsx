@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 const AboutPage = () => {
@@ -13,7 +14,7 @@ const AboutPage = () => {
 
 			<main className={styles.main}>
 				<h1 className={styles.title}>
-					Go To <a href='/'>Home</a>
+					Go To <Link href='/'>Home</Link>
 				</h1>
 
 				<p className={styles.description}>
