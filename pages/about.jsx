@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import { DarkLayout } from '../components/layouts/DarkLayout';
 import { MainLayout } from '../components/layouts/MainLayout';
 
 const AboutPage = () => {
 	return (
-		<MainLayout>
+		<>
 			<h1>AboutPage</h1>
 			<h1 className='title'>
 				Go To <Link href='/'>Home</Link>
@@ -12,6 +13,14 @@ const AboutPage = () => {
 			<p className='description'>
 				Get started by editing <code className='code'>pages/about.jsx</code>
 			</p>
+		</>
+	);
+};
+
+AboutPage.getLayout = function getLayout(page) {
+	return (
+		<MainLayout>
+			<DarkLayout>{page}</DarkLayout>
 		</MainLayout>
 	);
 };
