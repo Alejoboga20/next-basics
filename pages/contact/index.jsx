@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Navbar } from '../components/NavBar';
-import styles from '../styles/Home.module.css';
+import { Navbar } from '../../components/NavBar';
+import styles from '../../styles/Home.module.css';
 
-const HomePage = () => {
+const ContactPage = () => {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -17,9 +17,9 @@ const HomePage = () => {
 			<Navbar />
 
 			<main className={styles.main}>
-				<h1>HomePage</h1>
+				<h1>ContactPage</h1>
 				<h1 className={styles.title}>
-					Go To <Link href='/about'>About</Link>
+					Go To <Link href='/'>HomePage</Link>
 				</h1>
 
 				<p className={styles.description}>
@@ -43,4 +43,4 @@ const HomePage = () => {
 	);
 };
 
-export default HomePage;
+export default ContactPage;

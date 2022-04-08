@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Navbar } from '../components/NavBar';
 import styles from '../styles/Home.module.css';
 
 const AboutPage = () => {
@@ -12,7 +13,10 @@ const AboutPage = () => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
+			<Navbar />
+
 			<main className={styles.main}>
+				<h1>AboutPage</h1>
 				<h1 className={styles.title}>
 					Go To <Link href='/'>Home</Link>
 				</h1>
