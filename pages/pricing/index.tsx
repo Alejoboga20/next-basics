@@ -16,7 +16,7 @@ const PricingPage = () => {
 	);
 };
 
-PricingPage.getLayout = function getLayout(page: any) {
+PricingPage.getLayout = function getLayout(page: JSX.Element) {
 	return <MainLayout>{page}</MainLayout>;
 };
 
