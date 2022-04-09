@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Navbar } from '../Navbar';
 import styles from './MainLayout.module.css';
 
-export const MainLayout = ({ children }) => {
+export const MainLayout = ({ children }: MainLayoutProps) => {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -32,3 +32,7 @@ export const MainLayout = ({ children }) => {
 		</div>
 	);
 };
+
+interface MainLayoutProps {
+	children: JSX.Element | JSX.Element[];
+}

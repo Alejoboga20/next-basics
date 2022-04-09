@@ -1,4 +1,4 @@
-export const DarkLayout = ({ children }) => {
+export const DarkLayout = ({ children }: DarkLayoutProps) => {
 	return (
 		<div
 			style={{
@@ -12,3 +12,7 @@ export const DarkLayout = ({ children }) => {
 		</div>
 	);
 };
+
+interface DarkLayoutProps {
+	children: JSX.Element | JSX.Element[];
+}

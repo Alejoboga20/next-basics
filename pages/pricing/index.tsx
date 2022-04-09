@@ -10,13 +10,13 @@ const PricingPage = () => {
 			</h1>
 
 			<p className='description'>
-				Get started by editing <code className='code'>pages/pricing.jsx</code>
+				Get started by editing <code className='code'>pages/pricing/index.tsx</code>
 			</p>
 		</>
 	);
 };
 
-PricingPage.getLayout = function getLayout(page) {
+PricingPage.getLayout = function getLayout(page: any) {
 	return <MainLayout>{page}</MainLayout>;
 };
 
